@@ -435,7 +435,21 @@ hr {
 
 .service-icon {
 	margin-bottom: 20px;
-}	
+}
+
+.product-icon1 img {
+    width: 20%;
+    height: 20%;
+}
+
+#test path{
+    fill: red;
+}
+
+#ViewCatalogButton{
+    margin-top: 60px;
+    font-size: 180%
+}
 
 
 
