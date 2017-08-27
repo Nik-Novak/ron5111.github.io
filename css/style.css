@@ -442,13 +442,16 @@ hr {
     height: 20%;
 }
 
-#test path{
-    fill: red;
+#test {
+    width:15%;
+    height:20%;
+    margin-bottom: 8px;
+    margin-top: 6px;
 }
 
 #ViewCatalogButton{
     margin-top: 60px;
-    font-size: 180%
+    font-size: 180%;
 }
 
 
