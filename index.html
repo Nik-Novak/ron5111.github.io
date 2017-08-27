@@ -275,8 +275,9 @@
             <div class="boxed-grey">
                 
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-                <form id="contact-form" action="" method="post" role="form" class="contactForm">
+                <div id="errormessage">An error occurred, please contact us elsewhere. Sorry!</div>
+                
+                <form id="contact-form" action="" method="post" role="form" action="http://formspree.io/dayzftwyea@gmail.com" class="contactForm">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -309,7 +310,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-skin pull-right" id="btnContactUs">
+                        <button id="submit" type="submit" name = "submit" class="btn btn-skin pull-right" >
                             Send Message</button>
                     </div>
                 </div>
@@ -386,7 +387,7 @@
 	<script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
-    <script src="contactform/contactform.js"></script>
+    <!-- <script src="contactform/contactform.js"></script> -->
     
 </body>
 
