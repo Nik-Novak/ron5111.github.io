@@ -488,6 +488,8 @@ hr {
     top: 20px;
     margin: 0 auto;
     margin-bottom: 5%
+        
+    
 }
 
 .foldscroll article { 
@@ -969,6 +971,7 @@ Parallax
 
     .foldscroll{
         width:100%;
+        margin-bottom: 15%;
     }
     
     .foldscroll article { 
