@@ -812,7 +812,6 @@ Parallax
     .brand-heading {
         font-size: 100px;
     }
-	
 
     .intro-text {
         font-size: 25px;
@@ -823,11 +822,17 @@ Parallax
 @media (max-width:768px) {
     
     #mainslogan{
-        font-size: 80%
+        font-size: 180%;
+        margin-top: 30%;
     }
     
     #secondslogan{
-        font-size: 50%
+        font-size: 100%;
+        margin-bottom: 30%;
+    }
+    
+    #followslogan{
+        font-size: 100%
     }
 	
 	.team.boxed-grey {
@@ -843,9 +848,7 @@ Parallax
 
 @media (max-width:480px) {
     
-    #secondslogan{
-        visibility: hidden;
-    }
+    
 
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
