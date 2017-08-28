@@ -822,13 +822,13 @@ Parallax
 @media (max-width:768px) {
     
     #mainslogan{
-        font-size: 180%;
-        margin-top: 30%;
+        font-size: 220%;
+        margin-top: 35%;
     }
     
     #secondslogan{
         font-size: 100%;
-        margin-bottom: 30%;
+        margin-bottom: 35%;
     }
     
     #followslogan{
