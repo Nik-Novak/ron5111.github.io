@@ -304,6 +304,7 @@ hr {
 
 
 
+
 /* ===========================
 --- Intro
 ============================ */
@@ -835,6 +836,7 @@ Parallax
 }
 
 @media (max-width:480px) {
+    
 
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
