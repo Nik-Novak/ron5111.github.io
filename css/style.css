@@ -582,11 +582,20 @@ footer {
 
 footer p {
 	color: #f8f8f8;
+    
 }
 
 .credits, .credits a {
     color: #fff;
 }
+
+.credits h6{
+    margin-bottom: 0;
+    float:right!important;
+    text-align: right;
+    width: 100%;
+}
+
 
 /* ==========================
 Parallax
