@@ -483,10 +483,11 @@ hr {
     position: relative;
     height:250px;
     bottom: 20px;
-    width: 40%;
+    max-width: 80%;
     left: 0;
     top: 20px;
     margin: 0 auto;
+    margin-bottom: 5%
 }
 
 .foldscroll article { 
@@ -494,11 +495,11 @@ hr {
     text-align: justify;
     line-height: 1.8;
     background: #fff;
-    max-width: 620px;
+    max-width: 100%;
     font-size: 14px;
     padding: 80px 40px;
     margin: 0 auto;
-    width: 600px;
+    
     color: #333;
     
 }
@@ -939,10 +940,6 @@ Parallax
     .intro-text {
         font-size: 25px;
     }
-    
-    .foldscroll{
-        width:100%;
-    }
 
 
 }
@@ -970,6 +967,13 @@ Parallax
 		margin-bottom: 30px;
 	}
 
+    .foldscroll{
+        width:100%;
+    }
+    
+    .foldscroll article { 
+         max-width: 100%;   
+    }
 	
 }
 
