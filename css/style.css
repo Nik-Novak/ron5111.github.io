@@ -308,6 +308,8 @@ hr {
 	background-color: #AAA;
 }
 
+
+
 /* ===========================
 --- General sections
 ============================ */
@@ -509,7 +511,7 @@ hr {
 
 .foldscroll { 
     position: relative;
-    height:250px;
+    height:350px;
     bottom: 20px;
     max-width: 80%;
     left: 0;
@@ -537,7 +539,7 @@ hr {
 .foldscroll #article1{
     background: url(../img/products/honey1.jpg) no-repeat top center;
     background-size: cover;
-    height: auto;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -545,7 +547,7 @@ hr {
 .foldscroll #article2{
     background: url(../img/products/kinder-2.jpg) no-repeat top center;
     background-size: cover;
-    height: auto;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -553,7 +555,7 @@ hr {
 .foldscroll #article3{
     background: url(../img/products/oils1.jpg) no-repeat top center;
     background-size: cover;
-    height: auto;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -561,7 +563,7 @@ hr {
 .foldscroll #article4{
     background: url(../img/products/pasta1.jpg) no-repeat top center;
     background-size: cover;
-    height: auto;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -609,7 +611,104 @@ hr {
   /* fixes overlap error in IE7/8, 
      make sure you have an empty gif */
   background-image: url('empty.gif');
-}   
+}  
+
+/* Scroll Icon */
+
+.scroll-down {
+  position: absolute;
+  left: 78%; /*81%*/
+    margin:635px;
+  margin-left: -20px;
+  width: 0px;
+  height: 0px;
+  bottom: 35px;
+  padding-left: 7px;
+  cursor: pointer;
+  z-index: 2;
+  color: #c7c4b8;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.scroll-down.svg svg {
+  width: 25px;
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  -moz-transition: opacity .5s;
+  -ms-transition: opacity .5s;
+  -o-transition: opacity .5s;
+  transition: opacity .5s;
+}
+.scroll-down.svg .stroke {
+  stroke: #FFE;
+}
+.scroll-down.svg .scroller {
+  fill: #FFE;
+  -webkit-animation: updown 1s infinite;
+  -moz-animation: updown 1s infinite;
+  -o-animation: updown 1s infinite;
+  animation: updown 1s infinite;
+}
+
+@-webkit-keyframes updown {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    50% {
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px)
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+@-moz-keyframes updown {
+    0% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    50% {
+        -moz-transform: translate(0, 5px);
+        transform: translate(0, 5px)
+    }
+    100% {
+        -moz-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+@-o-keyframes updown {
+    0% {
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    50% {
+        -o-transform: translate(0, 5px);
+        transform: translate(0, 5px)
+    }
+    100% {
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+@keyframes updown {
+    0% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+    50% {
+        -webkit-transform: translate(0, 5px);
+        transform: translate(0, 5px)
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0)
+    }
+}
+
+/* /Scroll Icon*/
 
 /* ===========================
 --- Contact
