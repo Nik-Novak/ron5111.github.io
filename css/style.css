@@ -71,12 +71,40 @@ a:focus {
 
 .navbar-brand {
     font-weight: 700;
+    width: 112%
 }
+.navbar-brand  h1{
+    font-weight: 700;
+    display: inline;
+    
+}
+
+.navbar-brand  img{
+    overflow: visible;
+    height: 40px;
+    width: 40px;
+    z-index: 5;
+    position: relative;
+    float:left;
+    margin-right: 5%
+}
+
+.navbar-brand  svg{
+    overflow: visible;
+    height: 40px;
+    width: 40px;
+    float:left;
+    margin-left: -40px;
+    
+}
+
+
 .navbar-brand {
   height: 40px;
   padding: 5px 15px;
   font-size: 18px;
   line-height: 1em;
+    
 }
 
 .navbar-brand h1{
@@ -920,6 +948,7 @@ Parallax
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
+    
 
     .top-nav-collapse {
         padding: 0;
@@ -946,6 +975,10 @@ Parallax
 
 }
 @media (max-width:768px) {
+    
+    .navbar-brand{
+        width:80%;
+    }
     
     #mainslogan{
         font-size: 220%;
@@ -982,7 +1015,11 @@ Parallax
 
 @media (max-width:480px) {
     
-    
+    #followslogan{
+        visibility: visible;
+        margin-right: 0;
+        font-size: 70%;
+    }
 
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
@@ -1006,5 +1043,24 @@ Parallax
 		font-size: 20px;
 	}
 	
+}
+
+@media (max-width:340px) {
+    #followslogan{
+        visibility: hidden;
+    }
+}
+
+@media only screen and (max-width:1050px)  {
+    .navbar-brand{
+        
+    }
+    .navbar-custom{
+        
+    }
+    .navbar-nav{
+        margin-left: -5px;
+        float:right;
+    }
 }
 
