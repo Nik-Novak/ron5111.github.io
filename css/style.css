@@ -571,7 +571,7 @@ hr {
 .foldscroll #article5{
     background: url(../img/products/juices1.jpg) no-repeat top center;
     background-size: cover;
-    height: auto;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
 }
