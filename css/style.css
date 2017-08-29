@@ -616,9 +616,10 @@ hr {
 /* Scroll Icon */
 
 .scroll-down {
-  position: absolute;
+  position: relative;
   left: 78%; /*81%*/
-    margin:635px;
+    margin-top: -200px;
+    margin-bottom: 200px;
   margin-left: -20px;
   width: 0px;
   height: 0px;
