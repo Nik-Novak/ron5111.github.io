@@ -1120,6 +1120,10 @@ Parallax
         margin-right: 0;
         font-size: 70%;
     }
+    
+    #secondslogan{
+        visibility: hidden;
+    }
 
 	.navbar-custom .nav.navbar-nav {
     background-color: rgba(255,255,255,.4);
