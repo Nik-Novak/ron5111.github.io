@@ -373,6 +373,10 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 .social li a.google:hover {background-color:#BD3518;}
 .social li a.linkedin:hover {background-color:#007bb7;}
 
+.socialfloat button{
+    margin-top: 27%
+}
+
 
 /* ===========================
 --- Intro

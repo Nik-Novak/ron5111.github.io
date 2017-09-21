@@ -13,11 +13,11 @@
 		if ($(".navbar").offset().top > 50) {
 			$(".navbar-fixed-top").addClass("top-nav-collapse");
             $(".navbar-brand svg").attr("visibility","visible");
-            $(".socialfloat a").css("visibility","visible");
+            $(".socialfloat").css("visibility","visible");
 		} else {
 			$(".navbar-fixed-top").removeClass("top-nav-collapse");
             $(".navbar-brand svg").attr("visibility","hidden");
-            $(".socialfloat a").css("visibility","hidden");
+            $(".socialfloat").css("visibility","hidden");
 		}
 	});
 
