@@ -82,8 +82,8 @@ a:focus {
 .navbar-brand  img{
     margin-top: -2%;
     overflow: visible;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     z-index: 5;
     position: relative;
     float:left;
@@ -99,7 +99,6 @@ a:focus {
     width: 40px;
     float:left;
     margin-left: -40px;
-    
 }
 
 
