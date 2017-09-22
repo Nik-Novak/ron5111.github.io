@@ -40,5 +40,9 @@
 			event.preventDefault();
 		});
 	});
+    
+    $(document).ready(function(){
+     $('foldscroll').animate({scrollTop: 1000}, 800); 
+});
 
 })(jQuery);
