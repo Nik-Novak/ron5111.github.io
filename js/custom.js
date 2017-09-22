@@ -42,7 +42,10 @@
 	});
     
     $(document).ready(function(){
-     $('foldscroll').animate({scrollTop: 1000}, 800); 
-});
+        $('.foldscroll').scroll();
+        $(".foldscroll").animate({
+          scrollTop: 1400
+        }, 90000);
+    });
 
 })(jQuery);
