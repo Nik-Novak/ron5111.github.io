@@ -894,6 +894,10 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	padding:0;
 }
 
+#contact-form textarea{
+    z-index: 153;
+}
+
 .company-social .social-amazon a{background-color:#F9DE2C;}
 .company-social .social-ebay a{background-color:#3BBEC0;}
 .company-social .social-facebook a{background: #3873ae;}
