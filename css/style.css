@@ -551,6 +551,17 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 .owner{
     margin-bottom: 30px;
 }
+
+
+
+.employee{
+
+    width:35%;
+    margin: 0 7.5%;
+    display:inline-block;
+
+   
+}
 .team-social .social-facebook a{background: #3873ae;}
 .team-social .social-twitter a{background: #62c6f8;}
 .team-social .social-dribble a{background: #d74980;}
@@ -1282,5 +1293,10 @@ Parallax
     -webkit-transform:rotate(0deg); /* Safari and Chrome */
     -o-transform:rotate(0deg); /* Opera */
 }
+    .employee{
+         width:100%;
+    margin: 0 0;
+    display:inline-block;
+    }
 }
 

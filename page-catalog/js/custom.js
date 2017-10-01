@@ -41,6 +41,7 @@ var filecounts = {
     coconut_oil: 2
 }
 
+
 $(document).ready( function() {
     $(".cat li a").on("click", function() {
         
@@ -64,6 +65,18 @@ $(document).ready( function() {
         
         
     });
+    
+    $(".mastercat").on("click", function() {
+        var fp = $(this).data('target').substr(1);
+        alert(fp);
+//        $('#generate-here').html("");
+//        for( i=0; i<fc; i++){
+//            
+//            $('#generate-here').append($('<div>').load('products/' + fp + '/p' + (i+1) + '.html'));
+//        }
+    });
+    
+    
     
 });
 
