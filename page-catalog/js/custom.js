@@ -43,7 +43,6 @@ var filecounts = {
     honey_californiagourmet: 1,
     honey_attiki: 3,
     honey_marcopolo: 4
-    
 }
 
 
