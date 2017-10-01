@@ -1296,6 +1296,7 @@ Parallax
     .employee{
          width:100%;
     margin: 0 0;
+        margin-bottom: 30px;
     display:inline-block;
     }
 }
