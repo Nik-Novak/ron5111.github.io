@@ -38,7 +38,12 @@ function test(){
 
 var filecounts = {
     coconut_milk: 1,
-    coconut_oil: 2
+    coconut_oil: 2,
+    honey_pyramid: 5,
+    honey_californiagourmet: 1,
+    honey_attiki: 3,
+    honey_marcopolo: 4
+    
 }
 
 
@@ -50,7 +55,7 @@ $(document).ready( function() {
         
         $('#generate-here').html("");
         for( i=0; i<fc; i++){
-            
+//            alert('products/' + fp + '/p' + (i+1) + '.html');
             $('#generate-here').append($('<div>').load('products/' + fp + '/p' + (i+1) + '.html'));
         }
 //        $('#generate-here').html("");
@@ -68,15 +73,8 @@ $(document).ready( function() {
     
     $(".mastercat").on("click", function() {
         var fp = $(this).data('target').substr(1);
-        alert(fp);
-//        $('#generate-here').html("");
-//        for( i=0; i<fc; i++){
-//            
-//            $('#generate-here').append($('<div>').load('products/' + fp + '/p' + (i+1) + '.html'));
-//        }
-    });
-    
-    
-    
+        $('#catinfo').html("");
+        $('#catinfo').load('products/' + fp + '/desc.html');
+    }); 
 });
 
