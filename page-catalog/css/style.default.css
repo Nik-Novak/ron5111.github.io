@@ -183,6 +183,7 @@ ul.list-style-none {
   margin-bottom: 20px;
   letter-spacing: 0.08em;
 }
+
 .pages-listing .item h3 a {
   color: #555555;
 }
@@ -2249,6 +2250,7 @@ fieldset[disabled] .btn-template-primary.active {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  overflow: visible;
 }
 @media (max-width: 767px) {
   .product .image img.img-responsive {
@@ -2264,6 +2266,15 @@ fieldset[disabled] .btn-template-primary.active {
   height: 39.6px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.product .text h2 {
+  font-size: 12px;
+  font-weight: 700;
+  height: 39.6px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+     color: #555555;
 }
 .product .text h3 a {
   color: #555555;

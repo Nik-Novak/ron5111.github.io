@@ -5,7 +5,8 @@
 //    
 //}(jQuery);
 
-var $test = null;
+//Assign blue Active bar to selected category and collapse other categories
+var $last = null;
 (function ($) {
     $('.cat').click(function() {
    // $('.active').toggleClass('collapse');
@@ -13,18 +14,56 @@ var $test = null;
     $(this).addClass('active');
         
     var skipassign = false;
-    if(this==$test){
+    if(this==$last){
         $(this).removeClass('active');
-        $test=null;
+        $last=null;
         skipassign=true;
     }
         
     if(!skipassign)
-        $test = this;
+        $last = this;
     var $myGroup = $('#category-wrapper');
 $myGroup.on('show.bs.collapse','.collapse', function() {
     $myGroup.find('.collapse.in').collapse('hide');
 });
-    
 });
 })(jQuery);
+//end blue active and collapse
+
+//Dynamic HTML insert
+function test(){
+    
+    
+}
+
+var filecounts = {
+    coconut_milk: 1,
+    coconut_oil: 2
+}
+
+$(document).ready( function() {
+    $(".cat li a").on("click", function() {
+        
+        var fc = filecounts[$(this).data('val')];
+        var fp = $(this).data('val').replace('_','/');
+        
+        $('#generate-here').html("");
+        for( i=0; i<fc; i++){
+            
+            $('#generate-here').append($('<div>').load('products/' + fp + '/p' + (i+1) + '.html'));
+        }
+//        $('#generate-here').html("");
+//        $('#generate-here').append($('<div>').load("products/coconut/milk/p1.html"));
+//        $('#generate-here').append($('<div>').load("products/coconut/oil/p1.html"));
+//        $('#generate-here').append($('<div>').load("products/coconut/oil/p2.html"));
+        
+        
+        //$("#generate-here").load("products/coconut/milk/p1.html");
+        //$("#generate-here").load("products/coconut/oil/p1.html");
+        //$("#generate-here").load("products/coconut/oil/p2.html");
+        
+        
+    });
+    
+});
+
