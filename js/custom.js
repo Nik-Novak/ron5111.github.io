@@ -64,11 +64,18 @@ function change_image()
     {
         i=0;
     }
+    
+    if( i==1 | i==2){
+        $('#mainslogan').css("color","#50B849");
+        $('#secondslogan').css("color","#50B849");
+    }
+    else{
+        $('#mainslogan').css("color","#ffe");
+         $('#secondslogan').css("color","#ffe");
+    }
 
     var img="img/bg"+i+'.jpg';
-    alert(img);
     $("#intro").css("background-image", "url('" + img + "')");
-    alert("changed bg");
     i++;
     
 }
