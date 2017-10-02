@@ -487,8 +487,8 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 }
 
 #intro{
-    -webkit-transition: background-image 1.0s ease-in-out;
-transition: background-image 1.0s ease-in-out;
+    -webkit-transition: background-image 3.0s ease-in-out;
+transition: background-image 3.0s ease-in-out;
 }
 
 
