@@ -8,6 +8,10 @@
 	jQuery(window).load(function() { 
 		jQuery("#preloader").delay(100).fadeOut("slow");
 		jQuery("#load").delay(100).fadeOut("slow");
+        $("#intro").css("background-image", "url('img/bg1.jpg')");
+        $("#intro").css("background-image", "url('img/bg2.jpg')");
+        $("#intro").css("background-image", "url('img/bg3.jpg')");
+        $("#intro").css("background-image", "url('img/bg0.jpg')");
 	});
 
 
