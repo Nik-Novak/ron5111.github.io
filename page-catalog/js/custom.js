@@ -68,4 +68,3 @@ $(document).ready( function() {
         $('#catinfo').load('products/' + fp + '/desc.html');
     }); 
 });
-

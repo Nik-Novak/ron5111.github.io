@@ -50,3 +50,25 @@
     });
 
 })(jQuery);
+
+$(document).ready( function() {
+    setInterval("change_image()",5000);
+});
+
+var i=0;
+function change_image()
+{
+    
+    
+    if(i==4)
+    {
+        i=0;
+    }
+
+    var img="img/bg"+i+'.jpg';
+    alert(img);
+    $("#intro").css("background-image", "url('" + img + "')");
+    alert("changed bg");
+    i++;
+    
+}
