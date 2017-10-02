@@ -1,5 +1,7 @@
 
 (function ($) {
+    
+    $('.navbarlink').css("color",'#ffe');
 
 	new WOW().init();
 
@@ -63,6 +65,13 @@ function change_image()
     if(i==4)
     {
         i=0;
+    }
+    
+    if(i==0){
+        $('.navbarlink').css("color",'#ffe');
+    }
+    else{
+        $('.navbarlink').css("color",'#444444');
     }
     
     if( i==1 | i==2){

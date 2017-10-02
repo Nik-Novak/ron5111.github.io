@@ -124,6 +124,8 @@ a:focus {
     background-color: rgba(255,255,255,.4);
 }
 
+
+
 .navbar-custom.top-nav-collapse .nav.navbar-nav {
     background-color: rgba(0,0,0,0);
 }
@@ -484,6 +486,10 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 	text-shadow: -1px 1px 1px #000;
 }
 
+#intro{
+    -webkit-transition: background-image 1.0s ease-in-out;
+transition: background-image 1.0s ease-in-out;
+}
 
 
 
@@ -1065,6 +1071,8 @@ Parallax
     -moz-animation-timing-function: linear;
 }
 
+
+
 @-webkit-keyframes pulse {    
     0 {
         -webkit-transform: scale(1);
@@ -1173,6 +1181,10 @@ Parallax
 
     .intro-text {
         font-size: 25px;
+    }
+    
+    .navbarlink{
+        color: red;
     }
 
 
