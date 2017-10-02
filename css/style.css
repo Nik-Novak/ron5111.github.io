@@ -430,7 +430,7 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
     background-size: cover;
     height: auto;
     
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: center;
     background-repeat: no-repeat;
     
