@@ -491,6 +491,16 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 transition: background-image 3.0s ease-in-out;
 }
 
+#mainslogan{
+    -webkit-transition: color 3.0s ease-in-out;
+transition: color 3.0s ease-in-out;
+}
+
+#secondslogan{
+    -webkit-transition: color 3.0s ease-in-out;
+transition: color 3.0s ease-in-out;
+}
+
 
 
 /* ===========================
