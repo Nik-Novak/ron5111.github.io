@@ -56,6 +56,7 @@
         $(".foldscroll").animate({
           scrollTop: 1400
         }, 90000);
+        $('.navbarlink').css("color",'#ffe');
     });
 
 })(jQuery);
