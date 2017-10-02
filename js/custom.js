@@ -56,8 +56,15 @@
         $(".foldscroll").animate({
           scrollTop: 1400
         }, 90000);
+        $('#foldscroll').on('mousewheel', function(){
+            $('#foldscroll').stop();
+    //code that will only fire on manual scroll input
+        });
+//        $(".foldscroll").on('scroll',function(){
+//            $(this).stop();
+//        });
         $('.navbarlink').css("color",'#ffe');
-    });
+    },$);
 
 })(jQuery);
 
