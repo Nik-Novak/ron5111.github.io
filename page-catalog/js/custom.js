@@ -6,22 +6,14 @@
 //}(jQuery);
 
 //Assign blue Active bar to selected category and collapse other categories
-var $last = null;
+
 (function ($) {
     $('.cat').click(function() {
    // $('.active').toggleClass('collapse');
     $('.active').removeClass('active');
     $(this).addClass('active');
         
-    var skipassign = false;
-    if(this==$last){
-        $(this).removeClass('active');
-        $last=null;
-        skipassign=true;
-    }
-        
-    if(!skipassign)
-        $last = this;
+
     var $myGroup = $('#category-wrapper');
 $myGroup.on('show.bs.collapse','.collapse', function() {
     $myGroup.find('.collapse.in').collapse('hide');
