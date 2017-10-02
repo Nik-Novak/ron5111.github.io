@@ -18,11 +18,14 @@
             $(".navbar-brand svg").attr("visibility","visible");
             $(".socialfloat").css("visibility","visible");
             $(".orderfloat").css("visibility","visible");
+            topofpage=false;
 		} else {
 			$(".navbar-fixed-top").removeClass("top-nav-collapse");
             $(".navbar-brand svg").attr("visibility","hidden");
             $(".socialfloat").css("visibility","hidden");
             $(".orderfloat").css("visibility","hidden");
+            $('.navbarlink').css("color",'#444444');
+            topofpage=true;
 		}
 	});
 
@@ -57,6 +60,7 @@ $(document).ready( function() {
     setInterval("change_image()",5000);
 });
 
+var topofpage=true;
 var i=0;
 function change_image()
 {
@@ -67,7 +71,7 @@ function change_image()
         i=0;
     }
     
-    if(i==0){
+    if(i==0 && topofpage){
         $('.navbarlink').css("color",'#ffe');
     }
     else{
