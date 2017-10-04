@@ -37,6 +37,8 @@
                 $('.navbarlink').css("color",'#444444');
             topofpage=true;
 		}
+        
+        
 	});
 
 	//jQuery for page scrolling feature - requires jQuery Easing plugin
@@ -57,11 +59,39 @@
 		});
 	});
     
+//    var ls=350;
+//   $(".foldscroll").on('scroll',function(){
+//       if(($(this).scrollTop() - ls)>=400){
+//            var tests = $('.art');
+//            tests.first().insertAfter(tests.last());
+//            ls=$(this).scrollTop()-50;
+//           
+//       }
+//   });
+//    var t=4000;
+//    setInterval(function(){
+//        $('.foldscroll').scroll();
+//        $(".foldscroll").animate({
+//          scrollTop: t
+//        }, 50000, 'linear', function(){
+//             
+//        }); 
+//    },5000);
     $(document).ready(function(){
         $('.foldscroll').scroll();
         $(".foldscroll").animate({
           scrollTop: 1400
-        }, 90000);
+        }, 90000, 'linear', function(){
+             
+        }); 
+        
+        //Remove first article and append to bottom
+        //dpcument.child[0] = child[N-1]
+        
+//        $(".foldscroll").animate({
+//          scrollTop: 1400
+//        }, 90000);
+        
         $('#foldscroll').on('mousewheel', function(){
             $('#foldscroll').stop();
     //code that will only fire on manual scroll input
@@ -70,6 +100,7 @@
 //            $(this).stop();
 //        });
         $('.navbarlink').css("color",'#ffe');
+    
     },$);
 
 })(jQuery);
@@ -99,14 +130,18 @@ function change_image()
     if( i==1 | i==2){
         $('#mainslogan').css("color","#50B849");
         $('#secondslogan').css("color","#50B849");
+        $('#intro .page-scroll a').css("color","#50B849");
+        $('#intro .page-scroll a').css("border-color","#50B849");
     }
     else{
         $('#mainslogan').css("color","#ffe");
          $('#secondslogan').css("color","#ffe");
+        $('#intro .page-scroll a').css("color","#ffe");
+        $('#intro .page-scroll a').css("border-color","#ffe");
+
     }
 
     var img="img/bg"+i+'.jpg';
     $("#intro").css("background-image", "url('" + img + "')");
-    
-    
 }
+

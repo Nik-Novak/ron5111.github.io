@@ -64,6 +64,8 @@ a:focus {
     font-weight: 400;
 }
 
+
+
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -93,6 +95,7 @@ a:focus {
   image-rendering: pixelated;
         
 }
+
 
 .navbar-brand svg{
     overflow: visible;
@@ -502,7 +505,16 @@ transition: color 3.0s ease-in-out;
 transition: color 3.0s ease-in-out;
 }
 
-
+#intro .page-scroll a{
+    
+/*
+    -webkit-transition: border-color 3.0s ease-in-out;
+transition: border-color 3.0s ease-in-out;
+*/
+    -webkit-transition: color 3.0s, border-color 3.0s ease-in-out;
+transition: color 3.0s, border-color 3.0 ease-in-out;
+   
+}
 
 /* ===========================
 --- About
