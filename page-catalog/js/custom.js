@@ -8,6 +8,7 @@
 //Assign blue Active bar to selected category and collapse other categories
 
 (function ($) {
+    
     $('.cat').click(function() {
    // $('.active').toggleClass('collapse');
     $('.active').removeClass('active');
@@ -49,6 +50,11 @@ $(document).ready( function() {
 //            alert('products/' + fp + '/p' + (i+1) + '.html');
             $('#generate-here').append($('<div>').load('products/' + fp + '/p' + (i+1) + '.html'));
         }
+        
+        var fpnav = fp.split('/');
+        $('#nav-mastercat').html(fpnav[0]);
+        $('#nav-cat').html(fpnav[1]);
+        alert(fpnav);
 //        $('#generate-here').html("");
 //        $('#generate-here').append($('<div>').load("products/coconut/milk/p1.html"));
 //        $('#generate-here').append($('<div>').load("products/coconut/oil/p1.html"));
