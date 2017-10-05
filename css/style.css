@@ -531,6 +531,11 @@ transition: color 3.0s, border-color 3.0 ease-in-out;
 	margin-bottom: 20px;
 }
 
+.img-circle{
+ 
+     display:inline;
+}
+
 .team-social {
 	margin-left: 0;
 	padding-left: 0;
