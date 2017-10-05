@@ -23,6 +23,14 @@ $myGroup.on('show.bs.collapse','.collapse', function() {
 })(jQuery);
 //end blue active and collapse
 
+$('.navbar-nav li a').bind('click', function(event) {
+			var $anchor = $(this);
+			$('html, body').stop().animate({
+				scrollTop: $($anchor.attr('href')).offset().top
+			}, 1500, 'easeInOutExpo');
+			event.preventDefault();
+		});
+
 //Dynamic HTML insert
 function test(){
     
@@ -54,7 +62,6 @@ $(document).ready( function() {
         var fpnav = fp.split('/');
         $('#nav-mastercat').html(fpnav[0]);
         $('#nav-cat').html(fpnav[1]);
-        alert(fpnav);
 //        $('#generate-here').html("");
 //        $('#generate-here').append($('<div>').load("products/coconut/milk/p1.html"));
 //        $('#generate-here').append($('<div>').load("products/coconut/oil/p1.html"));
