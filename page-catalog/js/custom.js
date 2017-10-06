@@ -9,6 +9,24 @@
 
 (function ($) {
     
+    $('.btn-default').click(function(event){
+        var name = event.target.parentNode.parentNode.querySelector('a').innerHTML;
+        var brand = event.target.parentNode.parentNode.querySelector('h2').innerHTML;
+        var specs = event.target.parentNode.parentNode.querySelector('.price').innerHTML;
+        alert(name + ", " + brand + ", " + specs);
+        
+        var table = document.getElementById("inquiry");
+        var row = table.insertRow(-1);
+        var cell0 = row.insertCell(0);
+        var cell1 = row.insertCell(1);
+        var cell2 = row.insertCell(2);
+        var cell3 = row.insertCell(3);
+        cell0.innerHTML = "";
+        cell1.innerHTML = name;
+        cell2.innerHTML = brand;
+        cell3.innerHTML = specs;
+    });
+    
     $('.cat').click(function() {
    // $('.active').toggleClass('collapse');
     $('.active').removeClass('active');
@@ -31,10 +49,14 @@ $('.navbar-nav li a').bind('click', function(event) {
 			event.preventDefault();
 		});
 
-//Dynamic HTML insert
+
 function test(){
+    alert();
     
-    
+}
+
+function inquireAbout(){
+    alert();
 }
 
 var filecounts = {
