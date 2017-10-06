@@ -668,7 +668,7 @@ _________________________________________________________ -->
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
                 <div id="errormessage">An error occurred, please use the contact info to the right. Sorry!</div>
                 
-                <form id="contact-form" action="" method="post" role="form" action="http://formspree.io/dayzftwyea@gmail.com" class="contactForm">
+                <form id="contact-form" method="POST" role="form" action="http://formspree.io/naturalfoodsimport@gmail.com" class="contactForm">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -681,14 +681,14 @@ _________________________________________________________ -->
                             <label for="email">
                                 Email Address</label>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                 <div class="validation"></div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="subject">
                                 Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <input type="text" class="form-control" name="_subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                             <div class="validation"></div>
                         </div>
                     </div>
@@ -701,7 +701,7 @@ _________________________________________________________ -->
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button id="submit" type="submit" name = "submit" class="btn btn-skin pull-right" >
+                        <button id="submit" type="submit" class="btn btn-skin pull-right" >
                             Send Message</button>
                     </div>
                 </div>
