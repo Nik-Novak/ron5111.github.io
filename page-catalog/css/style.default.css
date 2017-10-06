@@ -3553,6 +3553,16 @@ td.text-right {
 height: 100%;
 }
 
+#submit:hover{
+  color: #fff;
+  background-color: #666;
+  border-color: #666;
+}
+
+.inquirybox {
+    display: none;
+}
+
 
 @media (max-width: 720px) {
   td{

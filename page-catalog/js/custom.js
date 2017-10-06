@@ -10,6 +10,7 @@
 (function ($) {
     
     $('.btn-default').click(function(event){
+        $('.inquirybox').css('display','inline');
         var parent = event.target.parentNode.parentNode;
         var img = $(parent).parent().children().first().clone();//parent.parentNode.firstElementChild.clone();
         $(img).removeClass();
