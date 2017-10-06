@@ -10,18 +10,25 @@
 (function ($) {
     
     $('.btn-default').click(function(event){
-        var name = event.target.parentNode.parentNode.querySelector('a').innerHTML;
-        var brand = event.target.parentNode.parentNode.querySelector('h2').innerHTML;
-        var specs = event.target.parentNode.parentNode.querySelector('.price').innerHTML;
-        alert(name + ", " + brand + ", " + specs);
-        
+        var parent = event.target.parentNode.parentNode;
+        var img = $(parent).parent().children().first().clone();//parent.parentNode.firstElementChild.clone();
+        $(img).removeClass();
+        $(img).find('*').removeAttr('class');
+        $(img).removeAttr('style');
+        $(img).find('*').removeAttr('style');
+        $(img).addClass('table-img');
+        var name = parent.querySelector('a').innerHTML;
+        var brand = parent.querySelector('h2').innerHTML;
+        var specs = parent.querySelector('.price').innerHTML;
         var table = document.getElementById("inquiry");
         var row = table.insertRow(-1);
         var cell0 = row.insertCell(0);
+        $(cell0).addClass('table-first');
         var cell1 = row.insertCell(1);
         var cell2 = row.insertCell(2);
         var cell3 = row.insertCell(3);
-        cell0.innerHTML = "";
+        alert($(img)[0].outerHTML);
+        cell0.innerHTML = $(img)[0].outerHTML;
         cell1.innerHTML = name;
         cell2.innerHTML = brand;
         cell3.innerHTML = specs;
@@ -84,15 +91,7 @@ $(document).ready( function() {
         var fpnav = fp.split('/');
         $('#nav-mastercat').html(fpnav[0]);
         $('#nav-cat').html(fpnav[1]);
-//        $('#generate-here').html("");
-//        $('#generate-here').append($('<div>').load("products/coconut/milk/p1.html"));
-//        $('#generate-here').append($('<div>').load("products/coconut/oil/p1.html"));
-//        $('#generate-here').append($('<div>').load("products/coconut/oil/p2.html"));
-        
-        
-        //$("#generate-here").load("products/coconut/milk/p1.html");
-        //$("#generate-here").load("products/coconut/oil/p1.html");
-        //$("#generate-here").load("products/coconut/oil/p2.html");
+//      
         
         return false;
     });
