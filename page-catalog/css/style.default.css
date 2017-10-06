@@ -2102,14 +2102,16 @@ fieldset[disabled] .btn-template-primary.active {
 .product .buttons {
   clear: both;
   position: absolute;
-  display: none;
+  
   bottom: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
+    height:57.5%;
   border: solid 1px transparent;
   padding: 20px;
+  display: none;
   background: rgba(255, 255, 255, 0.9);
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -2124,9 +2126,11 @@ fieldset[disabled] .btn-template-primary.active {
   top: 0;
 }
 .product:hover .buttons {
+    display: inline;
   clear: both;
   position: absolute;
   top: 0;
+    left: 0;
   background: rgba(255, 255, 255, 0.5);
 }
 .product:hover .image img {

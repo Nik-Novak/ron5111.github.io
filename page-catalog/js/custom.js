@@ -79,6 +79,6 @@ $(document).ready( function() {
         var fp = $(this).data('target').substr(1);
         $('#catinfo').html("");
         $('#catinfo').load('products/' + fp + '/desc.html');
-        return false;
+        event.preventDefault();
     }); 
 });
