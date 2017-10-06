@@ -72,12 +72,13 @@ $(document).ready( function() {
         //$("#generate-here").load("products/coconut/oil/p1.html");
         //$("#generate-here").load("products/coconut/oil/p2.html");
         
-        
+        return false;
     });
     
     $(".mastercat").on("click", function() {
         var fp = $(this).data('target').substr(1);
         $('#catinfo').html("");
         $('#catinfo').load('products/' + fp + '/desc.html');
+        return false;
     }); 
 });
