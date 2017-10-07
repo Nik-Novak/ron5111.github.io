@@ -9,7 +9,7 @@
 
 (function ($) {
     
-    $('.btn-default').click(function(event){
+    $('#generate-here').on('click','.btn-default',function(event){
         $('.inquirybox').css('display','inline');
         var parent = event.target.parentNode.parentNode;
         var img = $(parent).parent().children().first().clone();//parent.parentNode.firstElementChild.clone();
@@ -28,7 +28,7 @@
         var cell1 = row.insertCell(1);
         var cell2 = row.insertCell(2);
         var cell3 = row.insertCell(3);
-        alert($(img)[0].outerHTML);
+//        alert($(img)[0].outerHTML);
         cell0.innerHTML = $(img)[0].outerHTML;
         cell1.innerHTML = name;
         cell2.innerHTML = brand;
