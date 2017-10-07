@@ -33,6 +33,16 @@
         cell1.innerHTML = name;
         cell2.innerHTML = brand;
         cell3.innerHTML = specs;
+        
+        var categorypath = $('#nav-mastercat').html() + " --> " + $('#nav-cat').html();
+        var quote = "- Category: " + categorypath + '\n' + 
+                    "Name: " + name + '\n' + 
+                    "Brand: " + brand + '\n' +
+                    "Specs: " + specs + '\n\n';
+        alert(quote);
+        $('#inquirearea').val(function(i, text) {
+    return text + quote;
+});
     });
     
     $('.cat').click(function() {
