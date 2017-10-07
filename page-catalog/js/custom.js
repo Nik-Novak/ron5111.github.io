@@ -37,7 +37,7 @@
     
     $('.cat').click(function() {
    // $('.active').toggleClass('collapse');
-    $('.active').removeClass('active');
+    $('#category-wrapper .active').removeClass('active');
     $(this).addClass('active');
         
 
