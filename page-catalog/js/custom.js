@@ -39,7 +39,7 @@
                     "Name: " + name + '\n' + 
                     "Brand: " + brand + '\n' +
                     "Specs: " + specs + '\n\n';
-        alert(quote);
+       // alert(quote);
         $('#inquirearea').val(function(i, text) {
     return text + quote;
 });
