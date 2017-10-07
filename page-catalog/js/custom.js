@@ -6,8 +6,17 @@
 //}(jQuery);
 
 //Assign blue Active bar to selected category and collapse other categories
+var firstInquire = true;
 
 (function ($) {
+    
+    $('#generate-here').on('click','.btn-template-main',function(event){
+        alert("We're Sorry, but we do not have a shopping cart feature yet. Please click 'Inquire About', and then contact us using the form below.");
+    });
+    
+    $('html,body').on('mousewheel', function(){
+        $('html,body').stop();
+    });
     
     $('#generate-here').on('click','.btn-default',function(event){
         $('.inquirybox').css('display','inline');
@@ -43,6 +52,26 @@
         $('#inquirearea').val(function(i, text) {
     return text + quote;
 });
+        $('#animspace').html($(img).children().first().children()[0].outerHTML);
+        var imganim = $('#animspace img');
+        imganim.css("left",event.pageX);
+        imganim.css("top",event.pageY);
+        var contactPos = $('#anim-target').offset();
+        var secondAnimX = contactPos.left;
+        var secondAnimY = contactPos.top-100;
+       
+            
+            $(imganim).animate({
+                left: secondAnimX,
+                top: secondAnimY,
+                opacity: '0'
+            },5000);
+        if(firstInquire)
+            $('html,body').animate({
+                scrollTop: $("#anim-target").offset().top},
+                5000);
+        firstInquire=false;
+        
         return false;
     });
     
@@ -51,7 +80,6 @@
     $('#category-wrapper .active').removeClass('active');
     $(this).addClass('active');
         
-
     var $myGroup = $('#category-wrapper');
 $myGroup.on('show.bs.collapse','.collapse', function() {
     $myGroup.find('.collapse.in').collapse('hide');
@@ -66,17 +94,8 @@ $('.navbar-nav li a').bind('click', function(event) {
 				scrollTop: $($anchor.attr('href')).offset().top
 			}, 1500, 'easeInOutExpo');
 			event.preventDefault();
-		});
+});
 
-
-function test(){
-    alert();
-    
-}
-
-function inquireAbout(){
-    alert();
-}
 
 var filecounts = {
     coconut_milk: 1,

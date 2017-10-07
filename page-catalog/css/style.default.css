@@ -3568,6 +3568,13 @@ height: 100%;
     margin-bottom: 50px;
 }
 
+#animspace img{
+/* display: none;   */
+    position: absolute;
+    width: 5%;
+    z-index: 400;
+}
+
 
 @media (max-width: 720px) {
   td{
