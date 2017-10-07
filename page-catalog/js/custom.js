@@ -43,6 +43,7 @@
         $('#inquirearea').val(function(i, text) {
     return text + quote;
 });
+        return false;
     });
     
     $('.cat').click(function() {
@@ -83,7 +84,25 @@ var filecounts = {
     honey_pyramid: 5,
     honey_californiagourmet: 1,
     honey_attiki: 3,
-    honey_marcopolo: 4
+    honey_marcopolo: 4,
+    juice_aloevera: 11,
+    juice_coconut: 5,
+    juice_fresh: 18,
+    juice_organic: 9,
+    oliveoil_california: 5,
+    oliveoil_greek: 4,
+    oliveoil_italian: 6,
+    oliveoil_mediterranean: 1,
+    oliveoil_spanish: 1,
+    panettone_panettone: 1,
+    tea_decaffeinated: 6,
+    tea_organic: 6,
+    tea_twinings: 29,
+    vinegar_balsamic: 2,
+    vinegar_wine: 2,
+    zergut_produce: 8,
+    zergut_sauce: 11,
+    zergut_syrup: 6
 }
 
 

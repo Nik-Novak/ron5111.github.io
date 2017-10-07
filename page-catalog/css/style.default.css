@@ -3430,7 +3430,7 @@ div.table-title {
   width: 100%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   animation: float 5s infinite;
-    margin-bottom: 50px;
+    
 }
 
 
@@ -3561,6 +3561,11 @@ height: 100%;
 
 .inquirybox {
     display: none;
+}
+
+.inquirybox h4{
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 
