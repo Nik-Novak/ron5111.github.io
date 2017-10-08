@@ -146,17 +146,24 @@ $(document).ready( function() {
         }
         
         var fpnav = fp.split('/');
-        $('#nav-mastercat').html(fpnav[0]);
-        $('#nav-cat').html(fpnav[1]);
+        $('#nav-mastercat').html(fpnav[0]); //coconut
+        $('#nav-cat').html(fpnav[1]); //milk
 //      
+        
+        
+        
+        $('#catinfo').html("");
+        $('#catinfo').load('products/' + fpnav[0] + '/desc.html');
+        event.preventDefault();
+   
         
         return false;
     });
     
-    $(".mastercat").on("click", function() {
-        var fp = $(this).data('target').substr(1);
-        $('#catinfo').html("");
-        $('#catinfo').load('products/' + fp + '/desc.html');
-        event.preventDefault();
-    }); 
+//    $(".mastercat").on("click", function() {
+//        var fp = $(this).data('target').substr(1);
+//        $('#catinfo').html("");
+//        $('#catinfo').load('products/' + fp + '/desc.html');
+//        event.preventDefault();
+//    }); 
 });
