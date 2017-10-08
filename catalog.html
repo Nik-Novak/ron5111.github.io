@@ -3,72 +3,148 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Natural Food Imports</title>
+    <title>NFI Products</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <meta name="keywords" content="">
 
-    <!-- Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link href="css/animate.css" rel="stylesheet" />
-    <!-- Squad theme CSS -->
-    <link href="css/style.css" rel="stylesheet">
-	<link href="color/default.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap and Font Awesome css -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     
-    <!-- =======================================================
-        Theme Name: Squadfree
-        Theme URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-        Author: BootstrapMade
-        Author URL: https://bootstrapmade.com
-    ======================================================= -->
+    <!-- Css animations  -->
+    <link href="css/animate.css" rel="stylesheet">
 
+    <!-- Theme stylesheet, if possible do not edit this stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- Custom stylesheet - for your changes -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    
+    <link href="../color/default.css" rel="stylesheet">
+    
+
+    <!-- Responsivity for older IE -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+    <!-- Favicon and apple touch icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="manifest.json">
+<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
 </head>
 
+<body>
+   
+   
+    <div id="all">
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
-	<!-- Preloader -->
-	<div id="preloader">
-	  <div id="load"></div>
-	</div>
-    
+        <header>
 
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+            <!-- *** TOP ***
+_________________________________________________________ -->
+<!--
+            <div id="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-5 contact">
+                            <p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
+                            <p class="hidden-md hidden-lg"><a href="#" data-animate-hover="pulse"><i class="fa fa-phone"></i></a>  <a href="#" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                            </p>
+                        </div>
+                        <div class="col-xs-7">
+                            <div class="social">
+                                <a href="#" class="external facebook" data-animate-hover="pulse"><i class="fa fa-facebook"></i></a>
+                                <a href="#" class="external gplus" data-animate-hover="pulse"><i class="fa fa-google-plus"></i></a>
+                                <a href="#" class="external twitter" data-animate-hover="pulse"><i class="fa fa-twitter"></i></a>
+                                <a href="#" class="email" data-animate-hover="pulse"><i class="fa fa-envelope"></i></a>
+                            </div>
+
+                            <div class="login">
+                                <a href="#" data-toggle="modal" data-target="#login-modal"><i class="fa fa-sign-in"></i> <span class="hidden-xs text-uppercase">Sign in</span></a>
+                                <a href="customer-register.html"><i class="fa fa-user"></i> <span class="hidden-xs text-uppercase">Sign up</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+
+            <!-- *** TOP END *** -->
+
+            <!-- *** NAVBAR ***
+    _________________________________________________________ -->
+
+
+
+        <!-- *** LOGIN MODAL ***
+_________________________________________________________ -->
+
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="Login">Customer login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="customer-orders.html" method="post">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="email_modal" placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="password_modal" placeholder="password">
+                            </div>
+
+                            <p class="text-center">
+                                <button class="btn btn-template-main"><i class="fa fa-sign-in"></i> Log in</button>
+                            </p>
+
+                        </form>
+
+                        <p class="text-center text-muted">Not registered yet?</p>
+                        <p class="text-center text-muted"><a href="customer-register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <nav class="navbar navbar-custom navbar-fixed-top top-nav-collapse" role="navigation">
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand" href="index.html">
-                  <svg width="40" height="180">
-                      <rect x="101%" y="0%" rx="5" ry="5" width="40" height="40"
-                      style="fill:white;;stroke-width:5;opacity:1" />
-                  </svg>
-                   <img src="img/logos/logo-crop.png" alt="" width="25px" height="25px">
-                    <h1 id="followslogan">Natural Foods</h1>
+                <a class="navbar-brand" href="../index.html">
+                  
+                   <img src="img/logos/logo-white-bg.png" alt="" width="25px" height="25px">
+                    <h1 id="followslogan">Natural&nbsp; Foods</h1>
                 </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#intro">Home</a></li>
-        <li><a href="#about">About</a></li>
-		<li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#products">Honey</a></li>
-            <li><a href="#products">Chocolates</a></li>
-            <li><a href="#products">Oils</a></li>
-            <li><a href="#products">Pastas</a></li>
-            <li><a href="#products">Juices</a></li>
-          </ul>
-        </li>
-		<li><a href="#contact">Contact</a></li>
-        
+        <li><a href="../index.html" class="navbarlink">Home</a></li>
+        <li><a href="../index.html#about" class="navbarlink">About</a></li>
+		<li class="active"><a href="#products" class="navbarlink">Products</a></li>
+		<li><a href="#contact" class="navbarlink">Contact</a></li>
       </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -76,19 +152,430 @@
         <!-- /.container -->
     </nav>
 
-	
-	
+        <!-- *** LOGIN MODAL END *** -->
 
-	<!-- Section: contact -->
-    <section id="contact" class="home-section text-center">
+        <div id="heading-breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1>Here's what we have to offer</h1>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="breadcrumb">
+                            <li id="nav-mastercat">Home</li>
+                            <li id="nav-cat">Products</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="container">
+
+                <div class="row">
+
+
+                    <!-- *** LEFT COLUMN ***
+			_________________________________________________________ -->
+
+                    <div class="col-sm-3">
+
+                        <!-- *** MENUS AND FILTERS ***
+ _________________________________________________________ -->
+                        <div class="panel panel-default sidebar-menu">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Categories</h3>
+                            </div>
+                            
+                            
+
+                            <div class="panel-body">
+                                <ul class="nav nav-pills nav-stacked category-menu" id="category-wrapper">
+                                    <li class="cat">
+                                        <a data-toggle="collapse" data-target="#chocolate"  href="#" class="mastercat">Chocolate <span class="badge pull-right">42</span></a>
+                                        <ul id="chocolate" class="collapse">
+                                            <li><a href="shop-category.html">Belgian</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Greek</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Kind Bar</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Kinder</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Lindt</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Milka</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Nestle</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Perugina</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Ritter Sport</a>
+                                            </li>
+                                            <li><a href="shop-category.html">Toblerone</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a href="#" data-toggle="collapse" data-target="#coconut" class="mastercat">Coconut Products<span class="badge pull-right">3</span></a>
+                                        <ul id="coconut" class="collapse">
+                                            <li><a href="#" data-val='coconut_oil'>Oil</a>
+                                            </li>
+                                            <li><a href="#" data-val='coconut_milk' id="milk">Milk</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a href="#" data-toggle="collapse" data-target="#honey" class="mastercat">Honey  <span class="badge pull-right">13</span></a>
+                                        <ul id="honey" class="collapse">
+                                            <li><a href="#" data-val='honey_pyramid'>Pyramid</a>
+                                            </li>
+                                            <li><a href="#" data-val='honey_californiagourmet'>California Gourmet</a>
+                                            </li>
+                                            <li><a href="#" data-val='honey_attiki'>Attiki</a>
+                                            </li>
+                                            <li><a href="#" data-val='honey_marcopolo'>Marco Polo</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a data-toggle="collapse" data-target="#juice"  href="#" class="mastercat">Juice <span class="badge pull-right">43</span></a>
+                                        <ul id="juice" class="collapse">
+                                            <li><a href="#" data-val='juice_aloevera'>Aloe Vera</a>
+                                            </li>
+                                            <li><a href="#" data-val='juice_coconut'>Coconut</a>
+                                            </li>
+                                            <li><a href="#" data-val='juice_fresh'>Fresh</a>
+                                            </li>
+                                            <li><a href="#" data-val='juice_organic'>Organic</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a data-toggle="collapse" data-target="#oliveoil"  href="#" class="mastercat">Olive Oil <span class="badge pull-right">17</span></a>
+                                        <ul id="oliveoil" class="collapse">
+                                            <li><a href="#" data-val='oliveoil_italian'>Italian</a>
+                                            </li>
+                                            <li><a href="#" data-val='oliveoil_california'>California</a>
+                                            </li>
+                                            <li><a href="#" data-val='oliveoil_greek'>Greek</a>
+                                            </li>
+                                            <li><a href="#" data-val='oliveoil_mediterranean'>Mediterranean</a>
+                                            </li>
+                                            <li><a href="#" data-val='oliveoil_spanish'>Spanish</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a data-toggle="collapse" data-target="#panettone"  href="#" class="mastercat">Panettone <span class="badge pull-right">1</span></a>
+                                        <ul id="panettone" class="collapse">
+                                            <li><a href="#" data-val='panettone_panettone'>Panettone</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a data-toggle="collapse" data-target="#pasta"  href="#" class="mastercat">Pasta <span class="badge pull-right">42</span></a>
+                                        <ul id="pasta" class="collapse">
+                                            <li><a href="shop-category.html" data-val='pasta_dececco'>De Cecco</a>
+                                            </li>
+                                            <li><a href="shop-category.html" data-val='pasta_organic'>Organic</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a data-toggle="collapse" data-target="#tea"  href="#" class="mastercat">Tea <span class="badge pull-right">41</span></a>
+                                        <ul id="tea" class="collapse">
+                                            <li><a href="#" data-val='tea_twinings'>Twinings</a>
+                                            </li>
+                                            <li><a href="#" data-val='tea_organic'>Organic</a>
+                                            </li>
+                                            <li><a href="#" data-val='tea_decaffeinated'>Decaffeinated</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a data-toggle="collapse" data-target="#vinegar"  href="#" class="mastercat">Vinegar <span class="badge pull-right">4</span></a>
+                                        <ul id="vinegar" class="collapse">
+                                            <li><a href="#" data-val='vinegar_balsamic'>Balsamic</a>
+                                            </li>
+                                            <li><a href="#" data-val='vinegar_wine'>Wine</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="cat">
+                                        <a data-toggle="collapse" data-target="#zergut"  href="#" class="mastercat">ZerGut Product <span class="badge pull-right">25</span></a>
+                                        <ul id="zergut" class="collapse">
+                                            <li><a href="#" data-val='zergut_produce'>Produce</a>
+                                            </li>
+                                            <li><a href="#" data-val='zergut_sauce'>Sauce</a>
+                                            </li>
+                                            <li><a href="#" data-val='zergut_syrup'>Syrup</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+                       <!-- FUTURE: filters
+                        <div class="panel panel-default sidebar-menu">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Brands</h3>
+                                <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> <span class="hidden-sm">Clear</span></a>
+                            </div>
+
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Armani (10)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Versace (12)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Carlo Bruni (15)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox">Jack Honey (14)
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-default btn-sm btn-template-main"><i class="fa fa-pencil"></i> Apply</button>
+
+                                </form>
+
+                            </div>
+                        </div>
+
+                        <div class="panel panel-default sidebar-menu">
+
+                            <div class="panel-heading">
+                                <h3 class="panel-title clearfix">Colours</h3>
+                                <a class="btn btn-xs btn-danger pull-right" href="#"><i class="fa fa-times-circle"></i> <span class="hidden-sm">Clear</span></a>
+                            </div>
+
+                            <div class="panel-body">
+
+                                <form>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour white"></span> White (14)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour blue"></span> Blue (10)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour green"></span> Green (20)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour yellow"></span> Yellow (13)
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox"> <span class="colour red"></span> Red (10)
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-default btn-sm btn-template-main"><i class="fa fa-pencil"></i> Apply</button>
+
+                                </form>
+
+                            </div>
+                        </div>
+-->
+                        <!-- *** MENUS AND FILTERS END *** -->
+
+<!--
+                        <div class="banner">
+                            <a href="shop-category.html">
+                                <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
+                            </a>
+                        </div>
+-->
+                        <!-- /.banner -->
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <!-- *** LEFT COLUMN END *** -->
+
+                    <!-- *** RIGHT COLUMN ***
+			_________________________________________________________ -->
+
+                    <div class="col-sm-9">
+                        
+                        <div id="catinfo">
+                            <p class="text-muted lead">These are some of our customers' favourite products. To view our other products click on one of the categories to the left!</p>
+                        </div>
+                        
+                        <div class="row products" id="generate-here">
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="image">
+                                        <a href="shop-detail.html">
+                                            <img src="products/coconut/milk/p1.png" alt="" class="img-responsive image1">
+                                        </a>
+                                    </div>
+                                    <!-- /.image -->
+                                    <div class="text">
+                                        <h3><a href="shop-detail.html">Organic Coconut Milk</a></h3>
+                                        <h2>Natural Foods</h2>
+                                        <p class="price">24x13.5oz (400ml)</p>
+                                        <p class="buttons">
+                                            <a href="#" class="btn btn-default">Inquire About</a>
+                                            <a href="#" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                        </p>
+                                    </div>
+                                    <!-- /.text -->
+                                </div>
+                                <!-- /.product -->
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="image">
+                                        <a href="shop-detail.html">
+                                            <img src="products/coconut/oil/p1.png" alt="" class="img-responsive image1">
+                                        </a>
+                                    </div>
+                                    <!-- /.image -->
+                                    <div class="text">
+                                        <h3><a href="shop-detail.html">Organic Virgin Coconut Oil</a></h3>
+                                        <h2>Natural Foods</h2>
+                                        <p class="price">6x17oz (500ml)</p>
+                                        <p class="buttons">
+                                            <a href="shop-detail.html" class="btn btn-default">View detail</a>
+                                            <a href="shop-basket.html" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                        </p>
+                                    </div>
+                                    <!-- /.text -->
+
+                                    <div class="ribbon sale">
+                                        <div class="theribbon">SALE</div>
+                                        <div class="ribbon-background"></div>
+                                    </div>
+                                    <!-- /.ribbon -->
+
+                                    <div class="ribbon new">
+                                        <div class="theribbon">NEW</div>
+                                        <div class="ribbon-background"></div>
+                                    </div>
+                                    <!-- /.ribbon -->
+                                </div>
+                                <!-- /.product -->
+                            </div>
+
+                            <div class="col-md-4 col-sm-6">
+                                <div class="product">
+                                    <div class="image">
+                                        <a href="shop-detail.html">
+                                            <img src="products/coconut/oil/p2.png" alt="" class="img-responsive image1">
+                                        </a>
+                                    </div>
+                                    <!-- /.image -->
+                                    <div class="text">
+                                        <h3><a href="shop-detail.html">Black Blouse Versace</a></h3>
+                                        <h2>Natural Foods</h2>
+                                        <p class="price">6x6.7oz (200ml)</p>
+                                        <p class="buttons">
+                                            <a href="shop-detail.html" class="btn btn-default">View detail</a>
+                                            <a href="shop-basket.html" class="btn btn-template-main"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+                                        </p>
+
+                                    </div>
+                                    <!-- /.text -->
+                                </div>
+                                <!-- /.product -->
+                            </div>
+
+                            
+                            <!-- /.col-md-4 -->
+                        </div>
+                        <!-- /.products -->
+
+                        <div class="row">
+
+<!--
+                            <div class="col-md-12 banner">
+                                <a href="#">
+                                    <img src="img/banner2.jpg" alt="" class="img-responsive">
+                                </a>
+                            </div>
+-->
+
+                        </div>
+
+
+                        <div class="pages">
+
+                            <p class="loadMore">
+                                <a href="#" class="btn btn-template-main"><i class="fa fa-chevron-down"></i> Load more</a>
+                            </p>
+
+                            <ul class="pagination">
+                                <li><a href="#">&laquo;</a>
+                                </li>
+                                <li class="active"><a href="#">1</a>
+                                </li>
+                                <li><a href="#">2</a>
+                                </li>
+                                <li><a href="#">3</a>
+                                </li>
+                                <li><a href="#">4</a>
+                                </li>
+                                <li><a href="#">5</a>
+                                </li>
+                                <li><a href="#">&raquo;</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        
+                    </div>
+                    <!-- /.col-md-9 -->
+
+                    <!-- *** RIGHT COLUMN END *** -->
+
+                </div>
+                
+                   
+                   
+                   
+                    <section id="contact" class="home-section text-center">
 		<div class="heading-contact">
 			<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-8 col-lg">
 					<div class="wow bounceInDown" data-wow-delay="0.4s">
 					<div class="section-heading">
 					<h2>Get in touch</h2>
-					<i class="fa fa-2x fa-angle-down"></i>
+					
 
 					</div>
 					</div>
@@ -98,19 +585,15 @@
 		</div>
 		<div class="container">
 
-		<div class="row">
-			<div class="col-lg-2 col-lg-offset-5">
-				<hr class="marginbot-50">
-			</div>
-		</div>
+		
     <div class="row">
         <div class="col-lg-8">
             <div class="boxed-grey">
                 
                 <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage">An error occurred, please contact us elsewhere. Sorry!</div>
+                <div id="errormessage">An error occurred, please use the contact info to the right. Sorry!</div>
                 
-                <form id="contact-form" action="" method="post" role="form" action="http://formspree.io/dayzftwyea@gmail.com" class="contactForm">
+                <form id="contact-form" method="POST" role="form" action="http://formspree.io/naturalfoodsimport@gmail.com" class="contactForm">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -123,14 +606,14 @@
                             <label for="email">
                                 Email Address</label>
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <input type="email" class="form-control" name="_replyto" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                 <div class="validation"></div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="subject">
                                 Subject</label>
-                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <input type="text" class="form-control" name="_subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                             <div class="validation"></div>
                         </div>
                     </div>
@@ -143,12 +626,44 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button id="submit" type="submit" name = "submit" class="btn btn-skin pull-right" >
+                        <button id="submit" type="submit" class="btn btn-skin pull-right" >
                             Send Message</button>
                     </div>
                 </div>
+                <textarea id='inquirearea' style="display: none;"  class="form-control" name="products" rows="5"></textarea> 
+                <input type="hidden" name="_next" value="page-catalog/catalog" />
                 </form>
             </div>
+            
+            <div class="inquirybox">
+                <h3>You're Inquiring About:</h3>
+                
+                <table class="table-fill" id="inquiry">
+                
+                <tbody class="table-hover">
+                
+                </tbody>
+                </table>
+                
+                <h4>We will automatically attach these items to your email, so focus on your message!</h4>
+                <a href="#" class="btn btn-template-main"><i class="fa fa-times-circle" aria-hidden="true"></i>Clear All</a>
+                
+<!--
+                <table style="width:100%" id="inquiry">
+                    <tr>
+                        <th><img src="" alt=""></th>
+                        <th>Product</th>
+                        <th>Manufacturer</th>
+                        <th>Specs</th>
+                    </tr>
+                </table>
+-->
+                
+                
+            </div>
+            
+            <div id="anim-target"></div>
+       
         </div>
 		
 		<div class="col-lg-4">
@@ -156,84 +671,91 @@
 				<h5>Main Office</h5>
 				
 				<address>
-				  <strong>Natural Food Imports, LLC.</strong><br>
+				  <strong>Natural Foods Imports, LLC.</strong><br>
 				  Los Gatos, CA<br>
 				  <abbr title="Phone">P:</abbr> (408) 966-3196
 				</address>
 
 				<address>
 				  <strong>Email</strong><br>
-				  <a href="mailto:#">NaturalFoodsImport@gmail.com</a>
+				  <a href="mailto:aa@nfica.com">aa@nfica.com</a>
 				</address>	
 				
-				<!--<address> Future Social Media
+				<address>
 				  <strong>We're on social networks</strong><br>
                        	<ul class="company-social">
-                            <li class="social-facebook"><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li class="social-twitter"><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li class="social-dribble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
-                            <li class="social-google"><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="social-facebook"><a href="../maintenance.html" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li class="social-twitter"><a href="../maintenance.html" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li class="social-google"><a href="../maintenance.html" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li class="social-ebay"><a href="../maintenance.html" target="_blank"><i class="fa fa-ebay"><img src="../img/icons/ebay-logo.svg"></img></i></a></li>
+                            <li class="social-amazon"><a href="../maintenance.html" target="_blank"><i class="fa fa-amazon"></i></a></li>
                         </ul>	
-				</address>	-->	
+				</address>	
 				
-				<p>TODO: Add Logo</p>			
+				
 			
 			</div>	
 		</div>
+   
     </div>	
-
-		</div>
+    
+</div>
 	</section>
 	<!-- /Section: contact -->
-<br><br><br><br><br>
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 col-lg-12">
-					<div class="wow shake" data-wow-delay="0.4s">
-					<div class="page-scroll marginbot-30">
-						<a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up animated"></i>
-						</a>
-					</div>
-					</div>
-					
-					<p>&copy;Natural Food Imports. All rights reserved.</p>
-                    <div class="credits">
-                        <!-- 
-                            All the links in the footer should remain intact. 
-                            You can delete the links only if you purchased the pro version.
-                            Licensing information: https://bootstrapmade.com/license/
-                            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Squadfree
-                        
-                        <a href="https://bootstrapmade.com/free-one-page-bootstrap-themes-website-templates/">One Page Bootstrap Themes</a> by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                        <br>
-                        <br>-->
-                        <h6>Design and implementation by: Nik Novak, Ron Farr</h6>
-                    </div>
-				</div>
-			</div>	
-		</div>
-	</footer>
 
-    <!-- Core JavaScript Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>	
-	<script src="js/jquery.scrollTo.js"></script>
-	<script src="js/wow.min.js"></script>
-    <!-- Custom Theme JavaScript -->
-    <script src="js/custom.js"></script>
-    <!-- Fold Scroll -->
-    <script src="js/foldscroll.js"></script>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+
+
+
+        <!-- *** FOOTER ***
+_________________________________________________________ -->
+
+        
+        <!-- *** FOOTER END *** -->
+
+        <!-- *** COPYRIGHT ***
+_________________________________________________________ -->
+
+       
+
+        <!-- *** COPYRIGHT END *** -->
+
+<div id="fileCount"></div>
+<div id="files"></div>
+
+    </div>
+    <!-- /#all -->
+
+    <div id='animspace'>
+        test
+    </div>
+
+    <!-- #### JAVASCRIPT FILES ### -->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
-        $( '.foldscroll' ).foldscroll({
-            perspective: 900,
-            margin: '220px'
-        });
+        window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
     </script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="../js/jquery.easing.min.js"></script>	
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+    <script src="js/front.js"></script>
+    <script src="js/custom.js"></script>
     
     
+
+    
+
+
+
 </body>
 
 </html>
