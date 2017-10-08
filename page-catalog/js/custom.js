@@ -73,10 +73,10 @@ var firstInquire = true;
                 left: secondAnimX,
                 top: secondAnimY,
                 opacity: '0'
-            },5000);
+            },5100);
         if(firstInquire)
             $('html,body').animate({
-                scrollTop: $("#anim-target").offset().top},
+                scrollTop: $("#anim-target").offset().top-1000},
                 5000);
         firstInquire=false;
         
