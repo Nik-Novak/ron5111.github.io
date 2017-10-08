@@ -76,7 +76,7 @@ var firstInquire = true;
             },5100);
         if(firstInquire)
             $('html,body').animate({
-                scrollTop: $("#anim-target").offset().top-$(document).width()/2},
+                scrollTop: $("#anim-target").offset().top-$(window).height()},
                 5000);
         firstInquire=false;
         
