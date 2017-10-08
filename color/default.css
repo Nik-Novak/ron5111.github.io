@@ -1,10 +1,11 @@
 :root{
     --main: #2E86cE;
+    --second: gray;
 }
 
 a,.tp-caption a.btn:hover {
 /*	color: #67b0d1;*/
-    color: var(--main);
+    color: var(--second);
 }
 .top-nav-collapse {
     background: var(--main);
@@ -77,8 +78,8 @@ footer {
     border-bottom: solid 5px var(--main);
 }
 
-.ribbon .theribbon {
-    color: #fff;
-    background-color: var(--main);
+.ribbon.sale .theribbon {
+    
+    background-color: var(--second);
 }
 
