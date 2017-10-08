@@ -57,7 +57,7 @@ a {
 a:hover,
 a:focus {
     text-decoration: none;
-    color: #176e61;
+    color: #fff;
 }
 
 .light {
@@ -138,7 +138,7 @@ a:focus {
 .navbar-custom ul.nav li a {
 	font-size: 12px;
 	letter-spacing: 1px;
-    color: #444;
+    
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -447,7 +447,8 @@ ul.social li a:hover i { -moz-transform: rotate(360deg); -webkit-transform: rota
 
 .intro .slogan {
 	text-align: center;
-
+    -webkit-transition: background-color 3.0s ease-in-out;
+    transition: background-color 3.0s ease-in-out;
 }
 
 .intro .page-scroll {
@@ -489,14 +490,31 @@ transition: background-image 3.0s ease-in-out;
 }
 
 #mainslogan{
-    -webkit-transition: color 3.0s ease-in-out;
+    -webkit-transition: text-stroke-color 3.0s ease-in-out;
 transition: color 3.0s ease-in-out;
+    -webkit-transition: text-stroke-color 3.0s ease-in-out;
+transition: color 3.0s ease-in-out;
+    
+    -webkit-text-stroke: 2px black;
+   
+   text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 }
 
 #secondslogan{
     -webkit-transition: color 3.0s ease-in-out;
 transition: color 3.0s ease-in-out;
 }
+
+#followslogan{
+    -webkit-transition: color 3.0s ease-in-out;
+transition: color 3.0s ease-in-out;
+}
+
 
 #intro .page-scroll a{
     
@@ -1213,7 +1231,7 @@ Parallax
     }
     
     .navbarlink{
-        color: red;
+        color: #fff;
     }
 
 
@@ -1344,3 +1362,27 @@ Parallax
     }
 }
 
+.navbarlink{
+    -webkit-transition: color 3.0s ease-in-out;
+    transition: color 3.0s ease-in-out;
+    -webkit-transition: background-color 3.0s ease-in-out;
+    transition: background-color 3.0s ease-in-out;
+/*     background-color: rgba(0,0,0,0.5);*/
+}
+
+.navdark .nav li a{
+    background-color: rgba(0,0,0,0.5);
+}
+
+.navbarlink:hover{
+    
+}
+
+.navdark .nav li a:hover{
+    outline: 0;
+    background-color: rgba(0,0,0,.2);
+}
+
+.slogan-contrast{
+    background-color:  rgba(0,0,0,0.5);
+}

@@ -1,7 +1,5 @@
 
 (function ($) {
-    
-    $('.navbarlink').css("color",'#ffe');
 
 	new WOW().init();
 
@@ -21,19 +19,13 @@
 			$(".navbar-fixed-top").addClass("top-nav-collapse");
             $(".socialfloat").css("visibility","visible");
             $(".orderfloat").css("visibility","visible");
-            $('.navbarlink').css("color",'#444444');
-            $('.navbarlink').css("color",'#fff');
+            contextcolor(0);
             topofpage=false;
 		} else {
 			$(".navbar-fixed-top").removeClass("top-nav-collapse");
             $(".socialfloat").css("visibility","hidden");
             $(".orderfloat").css("visibility","hidden");
-            
-            if(i==0 || i==-1){
-                $('.navbarlink').css("color",'#fff');
-            }
-            else
-                $('.navbarlink').css("color",'#444444');
+            contextcolor(i);
             topofpage=true;
 		}
         
@@ -98,13 +90,13 @@
 //        $(".foldscroll").on('scroll',function(){
 //            $(this).stop();
 //        });
-        $('.navbarlink').css("color",'#fff');
     
     },$);
 
 })(jQuery);
 
 $(document).ready( function() {
+    change_image();
     setInterval("change_image()",5000);
 });
 
@@ -114,33 +106,84 @@ function change_image()
 {
     i++;
     
-    if(i==4)
+    if(i==5)
     {
         i=0;
     }
     
-    if(i==0 && topofpage){
-        $('.navbarlink').css("color",'#fff');
-    }
+    if(topofpage){
+        contextcolor(i);
+        }
     else{
         
     }
-    
-    if( i==1 | i==2){
-        $('#mainslogan').css("color","#50B849");
-        $('#secondslogan').css("color","#50B849");
-        $('#intro .page-scroll a').css("color","#50B849");
-        $('#intro .page-scroll a').css("border-color","#50B849");
-    }
-    else{
-        $('#mainslogan').css("color","#ffe");
-         $('#secondslogan').css("color","#ffe");
-        $('#intro .page-scroll a').css("color","#ffe");
-        $('#intro .page-scroll a').css("border-color","#ffe");
-
-    }
+//    if( i==1 | i==2 | i==3){
+//        $('#mainslogan').css("color","#50B849");
+//        $('#secondslogan').css("color","#50B849");
+//        $('#intro .page-scroll a').css("color","#50B849");
+//        $('#intro .page-scroll a').css("border-color","#50B849");
+//    }
+//    else if(i==0 | i==4){
+//        $('#mainslogan').css("color","#ffe");
+//         $('#secondslogan').css("color","#ffe");
+//        $('#intro .page-scroll a').css("color","#ffe");
+//        $('#intro .page-scroll a').css("border-color","#ffe");
+//
+//    }
 
     var img="img/bg"+i+'.jpg';
     $("#intro").css("background-image", "url('" + img + "')");
 }
+
+//.navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus, .navbar-custom .nav li.active {
+//    outline: 0;
+//    background-color: rgba(255,255,255,.2);
+//}
+
+function contextcolor(i){
+    $('.navbar-custom').addClass("navdark");
+    $('.navbar-custom').removeClass("navdark");
+    
+    $('.navbarlink').css("color",'#fff');
+    $('#mainslogan').css("-webkit-text-stroke","2px black");
+    $('.slogan').removeClass("slogan-contrast");
+    switch(i){
+        case 1:
+            $('#mainslogan').css("color","#ffe");
+            
+            $('#secondslogan').css("color","#ffe");
+            $('#intro .page-scroll a').css("color","#ffe");
+            $('#intro .page-scroll a').css("border-color","#ffe");
+            $('.navbar-custom').addClass("navdark");
+            $('.slogan').addClass("slogan-contrast");
+            break;
+        case 2:
+            $('#mainslogan').css("color","#50B849");
+            $('#secondslogan').css("color","#50B849");
+            $('#followslogan').css("color", "#50B849");
+            $('#intro .page-scroll a').css("color","#50B849");
+            $('#intro .page-scroll a').css("border-color","#50B849");
+            $('.navbar-custom').addClass("navdark");
+            break;
+        case 3: 
+            $('#mainslogan').css("color","#50B849");
+            $('#secondslogan').css("color","#50B849");
+            $('#intro .page-scroll a').css("color","#50B849");
+            $('#intro .page-scroll a').css("border-color","#50B849");
+            $('#followslogan').css("color", "#50B849");
+            $('.navbar-custom').addClass("navdark");
+            break;
+        case 4:
+            $('.navbarlink').css("color",'#333');
+        default:
+        $('#mainslogan').css("color","#ffe");
+         $('#secondslogan').css("color","#ffe");
+        $('#intro .page-scroll a').css("color","#ffe");
+        $('#intro .page-scroll a').css("border-color","#ffe");
+            $('#followslogan').css("color", "white");
+            $('.navbar-custom').removeClass("navdark");
+            
+    }
+}
+
 
