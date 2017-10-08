@@ -882,6 +882,8 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 	text-align: left;
 }
 
+
+
 .validation {
     color: red;
     display:none;
@@ -980,6 +982,9 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 .social li a.amazon:hover {background-color:#F9DE2C;}
 .social li a.google:hover {background-color:#BD3518;}
 
+.emaillink:hover,.emaillink:focus{
+	color: black;
+}
 
 /* ===========================
 --- Footer
