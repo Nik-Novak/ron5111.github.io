@@ -14,6 +14,14 @@ var firstInquire = true;
         alert("We're Sorry, but we do not have a shopping cart feature yet. Please click 'Inquire About', and then contact us using the form below.");
     });
     
+    $('.inquirybox').on('click','.btn-template-main',function(event){
+        var table = $('#inquiry').children().first();
+        table.html("");
+        $('#inquirearea').val("");
+        $('.inquirybox').css('display', 'none');
+        return false;
+    });
+    
     $('html,body').on('mousewheel', function(){
         $('html,body').stop();
     });

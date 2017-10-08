@@ -3564,7 +3564,10 @@ height: 100%;
 }
 
 .inquirybox h4{
-    margin-top: 20px;
+    margin: 20px auto;
+}
+
+.inquirybox .btn-template-main{
     margin-bottom: 50px;
 }
 
