@@ -1387,7 +1387,10 @@ Parallax
     outline: 0;
     background-color: rgba(0,0,0,.2);
 }
-
+.slogan{
+ padding-bottom: 10px;
+    padding-top: 20px;
+}
 .slogan-contrast{
     background-color:  rgba(0,0,0,0.8);
 }
