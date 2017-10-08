@@ -66,7 +66,7 @@ var firstInquire = true;
         imganim.css("top",event.pageY);
         var contactPos = $('#anim-target').offset();
         var secondAnimX = contactPos.left;
-        var secondAnimY = contactPos.top-100;
+        var secondAnimY = contactPos.top-150;
        
             
             $(imganim).animate({
@@ -76,7 +76,7 @@ var firstInquire = true;
             },5100);
         if(firstInquire)
             $('html,body').animate({
-                scrollTop: $("#anim-target").offset().top-1000},
+                scrollTop: $("#anim-target").offset().top-$(document).width()/2},
                 5000);
         firstInquire=false;
         
