@@ -4,7 +4,7 @@
     $subject = $_POST['subject'];
     $message = $_POST['message'];
     $from = 'From: nfica Contact Form'; 
-    $to = 'n.novak360@gmail.com'; 
+    $to = 'test@gmail.com'; 
     
 
     $body = "From: $name\n E-Mail: $email\n Subject: $subject\n Message: $message"
