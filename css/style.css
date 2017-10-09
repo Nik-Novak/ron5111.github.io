@@ -1332,6 +1332,44 @@ Parallax
 	
 }
 
+@media only screen and (max-width:1050px)  {
+    .navbar-brand{
+        
+    }
+    .navbar-custom{
+        
+    }
+    .navbar-nav{
+        margin-left: -5px;
+        float:right;
+    }
+    .orderfloat{
+    top: 95%;
+    left:0%;
+    margin: 0 25%;
+    z-index: 121;
+    visibility: hidden;
+}
+
+.orderfloat button{
+    margin:auto auto;
+    width:320px;height:50px;
+    width: 100%;
+    
+    transform:rotate(0deg);
+    -ms-transform:rotate(0deg); /* IE 9 */
+    -moz-transform:rotate(0deg); /* Firefox */
+    -webkit-transform:rotate(0deg); /* Safari and Chrome */
+    -o-transform:rotate(0deg); /* Opera */
+}
+    .employee{
+         width:100%;
+    margin: 0 0;
+        margin-bottom: 30px;
+    display:inline-block;
+    }
+}
+
 @media (max-width:340px) {
     #followslogan{
         visibility: hidden;
