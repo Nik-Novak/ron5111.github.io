@@ -106,6 +106,16 @@ $('.navbar-nav li a').bind('click', function(event) {
 
 
 var filecounts = {
+    chocolate_belgian: 6,
+    chocolate_greek: 4,
+    chocolate_kindbar: 16,
+    chocolate_kinder: 18,
+    chocolate_lindtt: 20,
+    chocolate_milka: 6,
+    chocolate_nestle: 12,
+    chocolate_perugina: 8,
+    chocolate_rittersport: 0,
+    chocolate_toblerone: 3,
     coconut_milk: 1,
     coconut_oil: 2,
     honey_pyramid: 5,
@@ -122,6 +132,8 @@ var filecounts = {
     oliveoil_mediterranean: 1,
     oliveoil_spanish: 1,
     panettone_panettone: 1,
+    pasta_dececco: 26,
+    pasta_organic: 12,
     tea_decaffeinated: 6,
     tea_organic: 6,
     tea_twinings: 29,
