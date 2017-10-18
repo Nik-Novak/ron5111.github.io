@@ -80,6 +80,9 @@ var firstInquire = true;
                 5000);
         firstInquire=false;
         
+        $('html,body').animate({
+                scrollTop: $("#generate-here").offset().top-$(window).height()},
+        
         return false;
     });
     
