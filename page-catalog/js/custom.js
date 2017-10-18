@@ -114,7 +114,7 @@ var filecounts = {
     chocolate_milka: 6,
     chocolate_nestle: 12,
     chocolate_perugina: 8,
-    chocolate_rittersport: 0,
+    chocolate_rittersport: 16,
     chocolate_toblerone: 3,
     coconut_milk: 1,
     coconut_oil: 2,
