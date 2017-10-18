@@ -80,9 +80,6 @@ var firstInquire = true;
                 5000);
         firstInquire=false;
         
-        $('html,body').animate({
-                scrollTop: $("#generate-here").offset().top-$(window).height()},
-        
         return false;
     });
     
@@ -169,10 +166,17 @@ $(document).ready( function() {
         
         $('#catinfo').html("");
         $('#catinfo').load('products/' + fpnav[0] + '/desc.html');
-        event.preventDefault();
-   
         
+        $('html,body').animate({
+                scrollTop: $("#generate-here").offset().top},
+                1000);
+        
+        event.preventDefault();
         return false;
+    });
+    
+    $(".mastercat").on("click", function() {
+        event.preventDefault();  
     });
     
 //    $(".mastercat").on("click", function() {
