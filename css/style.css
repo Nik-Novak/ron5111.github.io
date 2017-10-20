@@ -494,6 +494,7 @@ transition: background-image 3.0s ease-in-out;
 transition: color 3.0s ease-in-out;
     -webkit-transition: text-stroke-color 3.0s ease-in-out;
 transition: color 3.0s ease-in-out;
+    visibility: hidden;
     
     -webkit-text-stroke: 2px black;
    
@@ -508,6 +509,7 @@ transition: color 3.0s ease-in-out;
 #secondslogan{
     -webkit-transition: color 3.0s ease-in-out;
 transition: color 3.0s ease-in-out;
+    visibility: hidden;
 }
 
 #followslogan{
