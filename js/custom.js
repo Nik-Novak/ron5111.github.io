@@ -146,7 +146,7 @@ function contextcolor(i){
     
     $('.navbarlink').css("color",'#fff');
     $('#mainslogan').css("-webkit-text-stroke","2px black");
-    $('.slogan').removeClass("slogan-contrast");
+    //$('.slogan').removeClass("slogan-contrast");
     switch(i){
         case 1:
             $('#mainslogan').css("color","#ffe");
@@ -155,7 +155,7 @@ function contextcolor(i){
             $('#intro .page-scroll a').css("color","#ffe");
             $('#intro .page-scroll a').css("border-color","#ffe");
             $('.navbar-custom').addClass("navdark");
-            $('.slogan').addClass("slogan-contrast");
+            //$('.slogan').addClass("slogan-contrast");
             break;
         case 2:
             $('#mainslogan').css("color","#50B849");
